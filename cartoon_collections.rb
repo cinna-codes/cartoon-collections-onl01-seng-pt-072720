@@ -14,13 +14,14 @@ end
 
 def long_planeteer_calls(words)# code an argument here
   # Your code here
-  if words.map do |word|
-    word.length > 4
-    return true
-  else
-    return false
-  end
-  end
+  words.any?{|word| word.length > 4}
+  # if words.map do |word|
+  #   word.length > 4
+  #   return true
+  # else
+  #   return false
+  # end
+  # end
 end
 
 def find_the_cheese# code an argument here
